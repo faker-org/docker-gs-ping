@@ -4,7 +4,7 @@ name: Create and publish a Docker image
 # Configures this workflow to run every time a change is pushed to the branch called `release`.
 on:
   push:
-#    branches: ['main', 'release']
+    branches: ['main', 'release']
     tags:
       - "v*"
   workflow_dispatch:
@@ -64,6 +64,7 @@ jobs:
             type=schedule
             type=ref,event=branch
             type=ref,event=pr
+            type=ref,event=tag
             type=semver,pattern={{version}}
             type=sha    
       # This step uses the `docker/build-push-action` action to build the image, based on your repository's `Dockerfile`. If the build succeeds, it pushes the image to GitHub Packages.
