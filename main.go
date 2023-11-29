@@ -16,7 +16,7 @@ func main() {
 	e.Use(middleware.Recover())
 
 	e.GET("/", func(c echo.Context) error {
-		return c.HTML(http.StatusOK, "Hello, Docker! <6")
+		return c.HTML(http.StatusOK, "Hello, Docker! <7")
 	})
 
 	e.GET("/health", func(c echo.Context) error {
