@@ -44,6 +44,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: huangliang1203/${{ env.IMAGE_NAME }}:latest
+          tags: huangliang1203/docker-gs-ping:latest
           # tags: ${{ steps.meta.outputs.tags }}
           # labels: ${{ steps.meta.outputs.labels }}
