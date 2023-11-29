@@ -63,6 +63,10 @@ jobs:
         with:
           context: .
           push: true
-          tags: huangliang1203/docker-gs-ping:latest
+          tags: |
+            huangliang1203/docker-gs-ping:v1
+            huangliang1203/docker-gs-ping:v2
+            huangliang1203/docker-gs-ping:v3
+
           # tags: ${{ steps.meta.outputs.tags }}
           # labels: ${{ steps.meta.outputs.labels }}
